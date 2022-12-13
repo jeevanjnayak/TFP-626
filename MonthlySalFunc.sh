@@ -38,6 +38,12 @@ done
 
 monthlySal=$(( $perHourSal * $totalHour ))
 
+empDet[0]=$totalHour
+empDet[1]=$presDay
+empDet[2]=$abs
+empDet[3]=$monthlySal
+
+echo ${empDet[@]}
 echo "total hour is $totalHour"
 echo "Days present is $presDay"
 echo "Total days absent is $abs"
